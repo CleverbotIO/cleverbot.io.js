@@ -2,7 +2,7 @@
 
 To use this package, simply download it, place *cleverbot.io.min.js* in the web directory add the following to your page
 
-    <script type="text-javascript" src="cleverbot.io.min.js"></script>
+    <script type="text/javascript" src="cleverbot.io.min.js"></script>
   Note: It is a good practice to include *--save* to add this to your dependencies in your package.json
   
 Before using this module, please get your API keys at [http://cleverbot.io/keys](http://cleverbot.io/keys)
