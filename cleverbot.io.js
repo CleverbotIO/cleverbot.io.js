@@ -17,7 +17,10 @@ const cleverbotIO = function (user, key) {
             key: this.key,
             nick: this.nick
         }, function (data) {
-            data = JSON.parse(data);
+            if (typeof data != "object") {
+                data = JSON.parse(data);
+            }
+            
             if (data.status == "success") {
                 this.nick = data.nick;
                 callback(false, this.nick);
@@ -38,7 +41,9 @@ const cleverbotIO = function (user, key) {
             nick: this.nick,
             text: input
         }, function (data) {
-            data = JSON.parse(data);
+            if (typeof data != "object") {
+                data = JSON.parse(data);
+            }
             if (data.status == "success") {
                 callback(false, data.response);
             }
