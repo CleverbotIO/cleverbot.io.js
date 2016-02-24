@@ -1,5 +1,7 @@
 # cleverbot.io
 
+[![Slack Status](https://slack.cleverbot.io/badge.svg)](https://slack.cleverbot.io)
+
 To use this package, simply download it, place *cleverbot.io.min.js* in the web directory add the following to your page
 
     <script type="text/javascript" src="cleverbot.io.min.js"></script>
